@@ -5,23 +5,23 @@ class Paddock < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.1.0/paddock-aarch64-apple-darwin.tar.gz"
-      sha256 "243cc1cf05d64963029d4340d62ef76f731154879d2dc545e4f9e7903a49ce1e"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.2.0/paddock-aarch64-apple-darwin.tar.gz"
+      sha256 "0bef44b18377ee3b60470a2e3f3f8e59f9987a7edc071e19823e87a5e2ff381b"
     end
     on_intel do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.1.0/paddock-x86_64-apple-darwin.tar.gz"
-      sha256 "a851c6673098812343aa18ac3ab44f684ba7461ee11dae4e09d28fb321f07907"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.2.0/paddock-x86_64-apple-darwin.tar.gz"
+      sha256 "9c3c099d41cbd54662ee365111df5d7693c4fa2b8d3ac15a3fd6850cf6f57041"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.1.0/paddock-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "2f5213d6cebdc749a2f15dafbe55629f1bef779317a465bfacb4fc20b0df9fff"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.2.0/paddock-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "8939a4f50a23871181094dd42376bab8bccac5b7d4b327d8446b12a2a78862e6"
     end
     on_intel do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.1.0/paddock-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0d71ea7e2c9f02be019398f45454b55e665ea6f7e59615747ace095be8f1bb2f"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.2.0/paddock-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "642ecea35778477035ea847fa2603754f10e379d4a4ab822c9464b7e656d056a"
     end
   end
 
@@ -31,9 +31,9 @@ class Paddock < Formula
 
   def caveats
     <<~EOS
-      paddock needs tmux 3.8 or later (tmux -V). Add to ~/.tmux.conf:
+      paddock needs tmux 3.8 or later (tmux -V). Add to ~/.tmux.conf
+      (prefix a then opens paddock; @paddock-key picks another key):
 
-        set -g @paddock-key 'a'
         run-shell '#{HOMEBREW_PREFIX}/bin/paddock init'
 
       Reload tmux (tmux source-file ~/.tmux.conf) after installing and after
