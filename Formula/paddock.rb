@@ -5,23 +5,23 @@ class Paddock < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.7.0/paddock-aarch64-apple-darwin.tar.gz"
-      sha256 "9a783caee0baf7c939dd3f11b603055330eed28e05d24f3741dbf9aff318225f"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.8.0/paddock-aarch64-apple-darwin.tar.gz"
+      sha256 "62c4961e1761003c7eba304b95cb797c6db3ffc19c39f17371eceb434b139dcd"
     end
     on_intel do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.7.0/paddock-x86_64-apple-darwin.tar.gz"
-      sha256 "2083b34fef736263d057824be8e7a6fd4ce8da13a776d03b765a3b676b3ad6fb"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.8.0/paddock-x86_64-apple-darwin.tar.gz"
+      sha256 "9d431f217b0128930014f56518a353894e3237a287204e763309439ff5d945e2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.7.0/paddock-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "bda9d40479432d99373eb023019c231e9e9c6b32ec659fd76a35fe202da5d648"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.8.0/paddock-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1b9f16bbc6eef757fabf0d918e505552a793620d90f94744249258bba16d3ec0"
     end
     on_intel do
-      url "https://github.com/plopezlpz/paddock/releases/download/v0.7.0/paddock-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "91794ef203703b204af6494d45892375d944b305ab63601690bea38072e44f77"
+      url "https://github.com/plopezlpz/paddock/releases/download/v0.8.0/paddock-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "5d6f0805a75ac9add2a17b8ab4e3b932de6de1cdce74907df09cdecf87932dc6"
     end
   end
 
